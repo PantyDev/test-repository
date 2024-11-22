@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: unset;
+        }
+        .main {
+            max-width: 500px;
+            width: 100%;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .wrapper .item {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="control">
+            <input type="text" class="submit-input" />
+            <select class="submit-select">
+                
+            </select>
+            <button class="submit-button">Додати</button>
+        </div>
+        <div class="wrapper">
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
